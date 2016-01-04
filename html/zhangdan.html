@@ -118,8 +118,7 @@
 			line-height: 8px;
 		    font-size: 40px;
 		    color: #afabab;
-		    margin: 30px 40px 50px 0px;
-		    
+		    margin: 30px 40px 50px 0px;  
 		}
 		.zdlist .licontent{
 			height: 300px;
@@ -155,38 +154,62 @@
 		.form-first{
 			margin-left:80px;
 			margin-right:80px;
-			
-			
-			
-			
+			position: relative;	
 		}
+    	
+    	.select_img{
+    		position:absolute;
+    		top:50%;
+    		margin-top:-22px;
+    		left: 30px;
+    		
+    	}
+    	.voice_img{
+    		position:absolute;
+    		top:50%;
+    		margin-top:-22px;
+    		right: 30px;
+    		
+    	}
+    	.search_input >input{
+    		font-size: 40px;
+    	}
+    	.search_input >input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		    color: #B3B3C2;  
+		}
+		
+		.search_input >input::-moz-placeholder { /* Mozilla Firefox 19+ */
+		    color: #B3B3C2;
+		}
+		
+		.search_input >input:-ms-input-placeholder{
+		    color: #B3B3C2;
+		}
+		
+		.search_input >input::-webkit-input-placeholder{
+		    color: #B3B3C2;
+		}
+    	
     	#search{
     		height:100px;
     		border-radius: 100px;
     		padding-left:88px;
     		padding-right: 88px;
-    		
-    	
-    		
     	}
     	.icon_select{
     		background: url('../image/icon_select@2x.png') no-repeat center left  #FFFFFF;
-    		
-    		
     	}
     	.icon_voice{
     		background: url('../image/icon_voice@2x.png') no-repeat center right  #FFFFFF;
     	}
-    	/*.icon{
-    	 
+    	.icon{
+    	   width:44px;
+    	   height:44px;
 		  vertical-align:middle;
 		  margin-bottom: 1px;
 		  display: inline-block;
-    	  
-    	}*/
+    	}
     	
-    	
-
  </style>
 	<body>
 		<div class="header_bg">
@@ -194,8 +217,15 @@
 				<div class="header_search">
 					<form>
 						<div class="form-group form-first">
-						    <input type="text" class="form-control icon_select icon_voice" id="search" placeholder="搜索"></input>
-						    <span></span>
+							<div class="select_img">
+								<span class="icon icon_select"></span>
+							</div>
+						    <div class="search_input" >
+						    	<input type="text" class="form-control " id="search" placeholder="搜索" ></input>
+						    </div>
+						    <div class="voice_img">
+						    	<span class="icon icon_voice"></span>
+						    </div>
 						</div>
 					</form>
 				</div> 
@@ -212,7 +242,6 @@
 										<span class="allOut">支出：13000</span>
 									</div>
 								</li>
-								
 								<li style="opacity: 1;" 
 									data-id="d4e32c30eb964524b4a754cd9f58ca53" data-sblx="1">
 									<div class="zdinfo">
@@ -226,6 +255,20 @@
 									    </div>
 									   	<div class="out">		
 										  	<span class="s">-110</span>
+									   	</div>
+									</div>
+								</li>
+								<li style="opacity: 1;" 
+									data-id="d4e32c30eb964524b4a754cd9f58ca53" data-sblx="0">
+									<div class="zdinfo">
+										<div class="licontent">
+										   	<span class="title">兼职所得报酬</span><br>
+										   	<span class="desZhangsan">张三</span>
+										   	<span class="type">现金收入</span><br>
+										   	<span class="bm">编码 34210</span>	
+									    </div>
+									   	<div class="in">		
+										  	<span class="s">+110</span>
 									   	</div>
 									</div>
 								</li>
