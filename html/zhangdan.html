@@ -1,92 +1,106 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
 		<title></title>
+		<meta charset="utf-8">
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1"> 		
 		<link rel="stylesheet" type="text/css" href="../lib/bootstrap/dist/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" type="text/css" href="../lib/bootstrap/dist/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="../css/zhangdan.css">
-		<script type="text/javascript" src="../lib/jquery/dist/jquery.min.js"></script>
-		<script type="text/javascript" src="../lib/bootstrap/dist/js/bootstrap.min.js"></script>
+		<link href="../css/base.css" rel="stylesheet" />
+    	<link href="../css/esi-weixin.css" rel="stylesheet" />
+    	<link rel="stylesheet" type="text/css" href="../css/zhangdan.css">
 	</head>
 	<body>
-		<div class="header_bg">
-			<div class="container-fluid">
-				<div class="header_search">
-					<form>
-						<div class="form-group form-first">
-							<div class="select_img">
-								<span class="icon icon_select"></span>
+	<div class="esi-weixin-page">
+        <div class="header">
+            <div class="left-menu"> < 返回</div>
+            <div class="title">首页</div>
+            <div class="right-menu">保存</div>
+        </div>
+        <div class="content">
+			<div class="content_header_bg">
+				<div class="container-fluid">
+					<div class="content_header_search">
+						<form>
+							<div class="form-group form-first">
+								<div class="select_img">
+									<span class="icon icon_select"></span>
+								</div>
+							    <div class="search_input" >
+							    	<input type="text" class="form-control " id="search" placeholder="搜索" ></input>
+							    </div>
+							    <div class="voice_img">
+							    	<span class="icon icon_voice"></span>
+							    </div>
 							</div>
-						    <div class="search_input" >
-						    	<input type="text" class="form-control " id="search" placeholder="搜索" ></input>
-						    </div>
-						    <div class="voice_img">
-						    	<span class="icon icon_voice"></span>
-						    </div>
-						</div>
-					</form>
-				</div> 
-			</div>
-		</div>
-   		<div class="content_bg">
-   			<div class="container-fluid">
-   				<div class="zdlist">
-							<ul>
-								<li class="topli">
-									<div class="dateinfo">
-										<span class="date">10月23日</span>
-										<span class="allIn">收入：13000</span>
-										<span class="allOut">支出：13000</span>
-									</div>
-								</li>
-								<li style="opacity: 1;" 
-									data-id="d4e32c30eb964524b4a754cd9f58ca53" data-sblx="1">
-									<div class="zdinfo">
-										<div class="licontent">
-										   	<span class="title">购买洗衣机</span><br>
-										   	<span class="desWanggou">网上购物</span>
-										   	<span class="type">现金支出</span><br>
-										   	<span class="bm">编码 34210</span>	
-									  	  	<span class="number">数量 1</span>
-									  	  	<span class="danwei">单位台</span>
-									    </div>
-									   	<div class="out">		
-										  	<span class="s">-110</span>
-									   	</div>
-									</div>
-								</li>
-								<li style="opacity: 1;" 
-									data-id="d4e32c30eb964524b4a754cd9f58ca53" data-sblx="0">
-									<div class="zdinfo">
-										<div class="licontent">
-										   	<span class="title">兼职所得报酬</span><br>
-										   	<span class="desZhangsan">张三</span>
-										   	<span class="type">现金收入</span><br>
-										   	<span class="bm">编码 34210</span>	
-									    </div>
-									   	<div class="in">		
-										  	<span class="s">+110</span>
-									   	</div>
-									</div>
-								</li>
-								<li style="opacity: 1;" 
-									data-id="d4e32c30eb964524b4a754cd9f58ca53" data-sblx="0">
-									<div class="zdinfo">
-										<div class="licontent">
-										   	<span class="title">兼职所得报酬</span><br>
-										   	<span class="desZhangsan">张三</span>
-										   	<span class="type">现金收入</span><br>
-										   	<span class="bm">编码 34210</span>	
-									    </div>
-									   	<div class="in">		
-										  	<span class="s">+110</span>
-									   	</div>
-									</div>
-								</li>
-							</ul>
+						</form>
+					</div> 
 				</div>
-   			</div>
-   		</div>
+			</div>
+			<div class="content_bg">
+	   			<div class="container-fluid">
+	   				<div class="zdlist">
+						<ul>
+							<li class="topli">
+								<div class="dateinfo">
+									<span class="date">10月23日</span>
+									<span class="allIn">收13000</span>
+									<span class="allOut">支13000</span>
+								</div>
+							</li>
+							<li style="opacity: 1;" 
+								data-id="d4e32c30eb964524b4a754cd9f58ca53" data-sblx="1">
+								<div class="zdinfo">
+									<div class="licontent">
+									   	<span class="title">购买洗衣机</span><br />
+									   	<span class="desWanggou">网上购物</span>
+									   	<span class="type">现金支出</span><br>
+									   	<span class="bm">编码 34210</span>	
+								  	  	<span class="number">数量 1</span>
+								  	  	<span class="danwei">单位台</span>
+								    </div>
+								   	<div class="out">		
+									  	<span class="s">-110</span>
+								   	</div>
+								</div>
+							</li>
+							<li style="opacity: 1;" 
+								data-id="d4e32c30eb964524b4a754cd9f58ca53" data-sblx="0">
+								<div class="zdinfo">
+									<div class="licontent">
+									   	<span class="title">兼职所得报酬</span><br>
+									   	<span class="desZhangsan">张三</span>
+									   	<span class="type">现金收入</span><br>
+									   	<span class="bm">编码 34210</span>	
+								    </div>
+								   	<div class="in">		
+									  	<span class="s">+110</span>
+								   	</div>
+								</div>
+							</li>
+							<li style="opacity: 1;" 
+								data-id="d4e32c30eb964524b4a754cd9f58ca53" data-sblx="0">
+								<div class="zdinfo">
+									<div class="licontent">
+									   	<span class="title">兼职所得报酬</span><br>
+									   	<span class="desZhangsan">张三</span>
+									   	<span class="type">现金收入</span><br>
+									   	<span class="bm">编码 34210</span>	
+								    </div>
+								   	<div class="in">		
+									  	<span class="s">+110</span>
+								   	</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+	   			</div>
+			</div>          
+        </div>
+    </div>
+    <script src="../../lib/jquery/dist/jquery.min.js"></script>
+    <script src="../../lib/bootstrap/dist/js/bootstrap.min.js"></script>		
 	</body>
 </html>

@@ -3,18 +3,16 @@
 		}
 		
 		div.date_detail {
-			
-			margin-left:15px;
-			margin-right:15px;
+			margin-left:0px;
+			margin-right:0px;
 		}
 	   .date_detail ul {
-		    min-height:320px;
+		    min-height:60px;
 		    padding-left:0px;
 		    overflow:hidden;
 		}
 	   	.date_detail ul>li{
-	   		padding:0px 40px 0px 40px;
-		    height: 200px;
+		    height: 60px;
 		    position: relative;
 		    overflow: hidden;
 		    cursor: pointer;
@@ -23,24 +21,25 @@
 		    border-bottom:1px solid #E6EDF9;    
 		    margin-top:-1px;
 		    background-color: white;
+		    padding:0;
+		    list-style:none;
 	   	}
 	   	.date_detail ul>li>div span.ztitle{
-	   		font-size: 40px;
+	   		font-size: 15px;
 	   		color: #afabab;
-	   		line-height: 200px;
+	   		line-height: 60px;
 	   		
 	   	}
 	   	.date_detail ul>li>div span.zmonth,.zstartDate,.zendDate{
-	   		font-size: 60px;
+	   		font-size: 20px;
 	   		color: #595b6e;
-	   		line-height: 200px;
+	   		line-height: 60px;
 	   		vertical-align: middle;
 	   		
 	   	}
 	   	a.znext{
 		     vertical-align:middle;
-		 	 line-height: 200px;
-		 	 vertical-align: middle;
+		 	 line-height: 60px;
    			 overflow: hidden;
    			 cursor: pointer;
    			 text-align: right;
@@ -53,35 +52,35 @@
 	   		background: url('../image/buttonbg_reset_normal.png') no-repeat center right  #FFFFFF;
 	   	}
 	   	.znext_img{
-	   		background: url('../image/icon_arrow_next@2x.png') no-repeat center right  #FFFFFF;
+	   		background: url('../image/icon_arrow_next@1x.png') no-repeat center right  #FFFFFF;
 	   	}
 	   	
 	   	.znext_icon{
-	   	   width:20px;
-    	   height:36px;
+	   	   width:10px;
+    	   height:18px;
 		  vertical-align:middle;
 		  margin-bottom: 1px;
 		  display: inline-block;
 	   	}
 	   	.icon_button{
-	   	  width:180px;
-    	  height:68px;
+	   	  width:90px;
+    	  height:34px;
 		  vertical-align:middle;
 		  margin-bottom: 1px;
 		  display: inline-block;
-		  font-size: 30px;
-		  line-height: 68px;
+		  font-size: 20px;
+		  line-height: 34px;
 		  text-align: center;
 	   	}
 	   	a.nav{
 	   		  	display: inline-block;
 			    overflow: hidden;
 			    cursor: pointer;
-			    margin-left: 25px;
-			    margin-right: 25px;
-			    line-height: 800px;
+			    margin-left: 10px;
+			    margin-right: 10px;
+			    line-height: 400px;
 	   	}
 	   	.date_bottom{
-	   		height:800px;
+	   		height:400px;
 	   		text-align: center;
 	   	}
