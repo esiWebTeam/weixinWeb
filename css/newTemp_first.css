@@ -1,0 +1,23 @@
+.module {
+	display: block;
+	height: 80px;
+	width: 100%;
+	background-color: #fff;
+	margin-top: 20px;
+
+	padding: 10px 10px;
+	text-decoration: none;
+}
+.delete{
+	display: none;
+	vertical-align: middle;
+	float: left;
+	width: 24px;
+	height: 24px;
+	margin-top: 20px;
+	background-image: url(../image/icon_delete_normal@1x.png);
+	background-repeat: no-repeat;
+}
+.delete:hover{
+	background-image: url(../image/icon_delete_selected@1x.png);
+}

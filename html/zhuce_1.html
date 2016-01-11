@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>住户电子</title>
+				<link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css" />
+				<link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap-theme.min.css" />
+				<link rel="stylesheet" href="../css/jquery-confirm.min.css" />
+				<link rel="stylesheet" href="../css/login.css" />
+		
+				<script src="../lib/jquery/dist/jquery.min.js"></script>
+				<script src="../script/controller/jquery-confirm.min.js"></script>
+				<script src="../lib/backbone/backbone-min.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				$('#next').on('click',function(){
+					if($('#familycode').val() == ""){
+						$.alert({
+        					title: '提示!',
+       						content: '户编码不能为空!'
+    					});
+					}else if($('#originalpswd').val() == ""){
+						$.alert({
+        					title: '提示!',
+       						content: '密码不能为空!'
+    					});
+					}else{
+						location.href='zhuce_2.jsp';
+					}
+				});
+			});
+		</script>
+    </head>
+    <body style="background-color: #f9fafc;">
+    	<div class="container-fluid" style="background-color: #4b5798;">
+    		<div style="margin-top: 2%;">
+    			<a href="javascript:history.back(-1);" style="color: #fff;font-size: 16px;"><span class="glyphicon glyphicon-menu-left"></span> 返回</a>
+    		</div>
+    		<div style="text-align: center;">
+    			<span style="color: #fff;font-size: 24px;font-weight: bold;">注册</span>
+    			<img src="../image/time_line1.png" class="img-responsive"/>
+    		</div>
+    	</div>
+    	<div id="font" class="container-fluid form-group form-group-lg" style="margin-top: 10%;width: 80%;">
+    		<input type="text" id="familycode" placeholder="户编码" class="form-control"/>
+			<input type="password" id="originalpswd" placeholder="原始密码" class="form-control" style="margin-top: 5%;"/>
+    		<div style="padding-top:10%;">
+    			<button type="submit" id="next" class="btn btn-warning btn-lg btn-block active">
+					<span style="color: #976401;font-size: 25px;">下一步</span>
+				</button>
+    		</div>
+    	</div>
+ 	</body>
+</html>

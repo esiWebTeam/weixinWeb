@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link href="../lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../lib/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="../css/base.css" rel="stylesheet" />
+    <link href="../css/esi-weixin.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/jquery-confirm.min.css" />
+    <link rel="stylesheet" href="../css/newTemp.css" />
+</head>
+<body>
+    <div class="esi-weixin-page">
+        <div class="header">
+            <div class="left-menu"> < 新建模板</div>
+        </div>
+        <div class="content">
+            <div class="center-block" style="width: 90%; margin-top: 20px;">
+			<input type="text" class="form-control" placeholder="模板名称" style="height: 60px;font-size: 20px;border-radius: 30px;"/>
+			<div class="temp" style="border-radius: 2px;width: 100%;background-color: #fff;">
+				<a class="taghref" data-id="mbc" href="#"><label class="tag">买白菜<span href="#" name="mbc" class="deletetag"></span></label></a>
+				<a class="taghref" data-id="zczybly" href="#"><label class="tag">自产自用捕捞鱼<span name="zczybly" href="#" class="deletetag"></span></label></a>
+				<a class="taghref" data-id="gzsr" href="#"><label class="tag">工资收入<span name="gzsr" href="#" class="deletetag"></span></label></a>
+				<a class="taghref" data-id="gpqq" href="#"><label class="tag">股票期权<span name="gpqq" href="#" class="deletetag"></span></label></a>
+				<a class="taghref"  data-id="grsdszc" href="#"><label class="tag">个人所得税支出<span name="grsdszc" href="#" class="deletetag"></span></label></a>
+				<a class="taghref" data-id="gmxmzz" href="#"><label class="tag">购买小麦种子<span name="gmxmzz" href="#" class="deletetag"></span></label></a>
+			</div>
+			<div class="goTemp" align="center" style="margin-top: 20px;border: groove;border:solid;border-color: #38b495;height:60px;border-radius: 10px;">
+				<div>
+					<span class="goTemp-span">选择记账项目</span>
+					<span class="goTemp-icon"></span>
+				</div>
+			</div>
+			<div class="outterLine" style="margin-top: 20px;">
+				<div class="line"></div>
+				<span class="title" style="color: #b3b3c2;font-size: 20px;margin-top: 5px;">常用记账项</span>
+				<div class="line"></div>
+			</div>
+			<div style="margin-top: 20px;">
+				<a class="taghref" href="#"><label class="tag">买白菜</label></a>
+				<a class="taghref" href="#"><label class="tag">自产自用捕捞鱼 </label></a>
+				<a class="taghref" href="#"><label class="tag">工资收入 </label></a>
+				<a class="taghref" href="#"><label class="tag">股票期权 </label></a>
+				<a class="taghref" href="#"><label class="tag">个人所得税支出 </label></a>
+				<a class="taghref" href="#"><label class="tag">购买小麦种子 </label></a>
+			</div>
+			<div align="center" style="margin-top: 15%;margin-bottom:10%;width: 100%;">
+				<button class="btn btn-info btn-temp">保存模板</button>
+				<a href="#" class="btn btn-info btn-temp">保存并记账</a>
+			</div>
+		</div>
+        </div>
+    </div>
+
+    <script src="../lib/jquery/dist/jquery.min.js"></script>
+    <script src="../lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../script/controller/jquery-confirm.min.js"></script>
+    <script type="text/javascript">
+			$(function(){
+				/*
+				 * 分割线
+				 */
+				var titleWidth=$('.title').width();
+				var screenWidth=$('.outterLine').width();
+				var lineWidth=(screenWidth - titleWidth - 10) / 2;
+				$('.line').css('width',lineWidth);
+				/*
+				 * 标签颜色
+				 */
+				var colorList = ['#38b495','#D9534f','#d58512','#0088cc'];
+				var tagList = $('.tag');
+				for(var n = 0;n<tagList.length;n++){
+					 $(tagList[n]).css('color',colorList[n % 4]);
+				}
+				
+				$('.goTemp').on('click',function(){
+					location.href='newTemp_select.jsp';
+				});
+				//删除
+				$('.deletetag').on('click',function(){
+					var name= $(this).attr('name');
+					$('a[data-id="'+name+'"]').remove();
+				});
+			});
+		</script>
+</body>
+</html>
