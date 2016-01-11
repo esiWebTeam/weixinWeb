@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="../lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="../lib/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+		<link href="../css/base.css" rel="stylesheet" />
+		<link href="../css/esi-weixin.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/jquery-confirm.min.css" />
+		<link rel="stylesheet" href="../css/newTemp.css" />
+		<link rel="stylesheet" href="../css/newTemp_select.css" />
+	</head>
+
+	<body>
+		<div class="esi-weixin-page">
+			<div class="header">
+				<div class="left-menu">< 新建模板</div>
+				<div class="header_search">
+					<form>
+						<div class="form-group form-first">
+							<div class="select_img">
+								<span class="icon icon_select"></span>
+							</div>
+							<div class="search_input">
+								<input type="text" class="form-control " id="search" placeholder="搜索"></input>
+							</div>
+							<div class="voice_img">
+								<span class="icon icon_voice"></span>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="content">
+				<div class="head" align="center" style="width: 100%; height: 60px; white-space: nowrap;overflow-x: scroll;">
+					<a class="taghref" data-id="mbc" href="#">
+						<label class="tag">买白菜<span href="#" name="mbc" class="deletetag"></span></label>
+					</a>
+					<a class="taghref" data-id="zczybly" href="#">
+						<label class="tag">自产自用捕捞鱼<span name="zczybly" href="#" class="deletetag"></span></label>
+					</a>
+					<a class="taghref" data-id="gzsr" href="#">
+						<label class="tag">工资收入<span name="gzsr" href="#" class="deletetag"></span></label>
+					</a>
+					<a class="taghref" data-id="gpqq" href="#">
+						<label class="tag">股票期权<span name="gpqq" href="#" class="deletetag"></span></label>
+					</a>
+					<a class="taghref" data-id="grsdszc" href="#">
+						<label class="tag">个人所得税支出<span name="grsdszc" href="#" class="deletetag"></span></label>
+					</a>
+					<a class="taghref" data-id="gmxmzz" href="#">
+						<label class="tag">购买小麦种子<span name="gmxmzz" href="#" class="deletetag"></span></label>
+					</a>
+				</div>
+				<div class="contents tabbable tabs-left">
+					<ul class="nav nav-tabs contenthead">
+						<li class="active" style="font-weight: bold;font-size: 20px;color: #4b5798;"><a href="#tab1" data-toggle="tab">支出</a></li>
+						<li style="font-weight: bold;font-size: 20px;color: #4b5798;"><a href="#tab2" data-toggle="tab">收入</a></li>
+						<li style="font-weight: bold;font-size: 20px;color: #4b5798;"><a href="#tab3" data-toggle="tab">自产自用</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active content" id="tab1" style="overflow: auto;">
+							<div style="border-bottom: solid thin #e6edf9;">
+								<p style="color: #2bbda0;font-size: 20px;font-weight: bold;">食品烟酒 > 蔬菜和食用菌</p>
+							</div>
+							<div style="border-bottom: solid thin #e6edf9;padding:10px 10px;">
+								<p style="color: #4b5798;font-size: 18px;font-weight: bolder;">购买鲜菜</p>
+								<div style="color: #687ad6;font-size: 14px;font-weight: bold;">
+									<a class="checked" data-id="false" name="jc" href="#">净菜</a> | <a class="checked" data-id="false" name="ylc" href="#">叶类菜</a> |
+									<a class="checked" data-id="false" name="glc" href="#">瓜类菜</a> | <a class="checked" data-id="false" name="gjl" href="#">块根块茎类</a> |
+									<a class="checked" data-id="false" name="qgl" href="#">茄果类</a> | <a class="checked" data-id="false" name="cl" href="#">葱</a> |
+									<a class="checked" data-id="false" name="sl" href="#">蒜类</a> | <a class="checked" data-id="false" name="cydl" href="#">菜用豆类</a> |
+									<a class="checked" data-id="false" name="ssc" href="#">水生菜类</a> |
+									<a class="checked" data-id="false" name="bc" href="#">白菜</a> | <a class="checked" data-id="false" name="bc" href="#">菠菜</a> |
+									<a class="checked" data-id="false" name="lb" href="#">萝卜</a> | <a class="checked" data-id="false" name="xhs" href="#">西红柿</a> |
+									<a class="checked" data-id="false" name="hg" href="#">黄瓜</a> | <a class="checked" data-id="false" name="bd" href="#">扁豆</a> |
+									<a class="checked" data-id="false" name="qz" href="#">茄子</a> | <a class="checked" data-id="false" name="ws" href="#">莴笋</a> |
+									<a class="checked" data-id="false" name="qc" href="#">青菜</a> | <a class="checked" data-id="false" name="qc" href="#">芹菜</a> |
+									<a class="checked" data-id="false" name="xc" href="#">香菜</a> | <a class="checked" data-id="false" name="sc" href="#">生菜</a> |
+									<a class="checked" data-id="false" name="jiuc" href="#">韭菜</a> | <a class="checked" data-id="false" name="hc" href="#">花菜</a> |
+									<a class="checked" data-id="false" name="jxc" href="#">卷心菜</a> | <a class="checked" data-id="false" name="xhl" href="#">西葫芦</a> |
+									<a class="checked" data-id="false" name="jb" href="#">茭白</a> | <a class="checked" data-id="false" name="dy" href="#">豆芽</a>
+								</div>
+							</div>
+							<div style="border-bottom: solid thin #e6edf9;padding:10px 10px;">
+								<p style="color: #4b5798;font-size: 18px;font-weight: bolder;">购买鲜菜</p>
+								<div style="color: #687ad6;font-size: 14px;font-weight: bold;">
+									<a class="checked" data-id="false" name="jc" href="#">净菜</a> | <a class="checked" data-id="false" name="ylc" href="#">叶类菜</a> |
+									<a class="checked" data-id="false" name="glc" href="#">瓜类菜</a> | <a class="checked" data-id="false" name="gjl" href="#">块根块茎类</a> |
+									<a class="checked" data-id="false" name="qgl" href="#">茄果类</a> | <a class="checked" data-id="false" name="cl" href="#">葱</a> |
+									<a class="checked" data-id="false" name="sl" href="#">蒜类</a> | <a class="checked" data-id="false" name="cydl" href="#">菜用豆类</a> |
+									<a class="checked" data-id="false" name="ssc" href="#">水生菜类</a> |
+									<a class="checked" data-id="false" name="bc" href="#">白菜</a> | <a class="checked" data-id="false" name="bc" href="#">菠菜</a> |
+									<a class="checked" data-id="false" name="lb" href="#">萝卜</a> | <a class="checked" data-id="false" name="xhs" href="#">西红柿</a> |
+									<a class="checked" data-id="false" name="hg" href="#">黄瓜</a> | <a class="checked" data-id="false" name="bd" href="#">扁豆</a> |
+									<a class="checked" data-id="false" name="qz" href="#">茄子</a> | <a class="checked" data-id="false" name="ws" href="#">莴笋</a> |
+									<a class="checked" data-id="false" name="qc" href="#">青菜</a> | <a class="checked" data-id="false" name="qc" href="#">芹菜</a> |
+									<a class="checked" data-id="false" name="xc" href="#">香菜</a> | <a class="checked" data-id="false" name="sc" href="#">生菜</a> |
+									<a class="checked" data-id="false" name="jiuc" href="#">韭菜</a> | <a class="checked" data-id="false" name="hc" href="#">花菜</a> |
+									<a class="checked" data-id="false" name="jxc" href="#">卷心菜</a> | <a class="checked" data-id="false" name="xhl" href="#">西葫芦</a> |
+									<a class="checked" data-id="false" name="jb" href="#">茭白</a> | <a class="checked" data-id="false" name="dy" href="#">豆芽</a>
+								</div>
+							</div>
+							<div style="border-bottom: solid thin #e6edf9;padding:10px 10px;">
+								<p style="color: #4b5798;font-size: 18px;font-weight: bolder;">购买鲜菜</p>
+								<div style="color: #687ad6;font-size: 14px;font-weight: bold;">
+									<a class="checked" data-id="false" name="jc" href="#">净菜</a> | <a class="checked" data-id="false" name="ylc" href="#">叶类菜</a> |
+									<a class="checked" data-id="false" name="glc" href="#">瓜类菜</a> | <a class="checked" data-id="false" name="gjl" href="#">块根块茎类</a> |
+									<a class="checked" data-id="false" name="qgl" href="#">茄果类</a> | <a class="checked" data-id="false" name="cl" href="#">葱</a> |
+									<a class="checked" data-id="false" name="sl" href="#">蒜类</a> | <a class="checked" data-id="false" name="cydl" href="#">菜用豆类</a> |
+									<a class="checked" data-id="false" name="ssc" href="#">水生菜类</a> |
+									<a class="checked" data-id="false" name="bc" href="#">白菜</a> | <a class="checked" data-id="false" name="bc" href="#">菠菜</a> |
+									<a class="checked" data-id="false" name="lb" href="#">萝卜</a> | <a class="checked" data-id="false" name="xhs" href="#">西红柿</a> |
+									<a class="checked" data-id="false" name="hg" href="#">黄瓜</a> | <a class="checked" data-id="false" name="bd" href="#">扁豆</a> |
+									<a class="checked" data-id="false" name="qz" href="#">茄子</a> | <a class="checked" data-id="false" name="ws" href="#">莴笋</a> |
+									<a class="checked" data-id="false" name="qc" href="#">青菜</a> | <a class="checked" data-id="false" name="qc" href="#">芹菜</a> |
+									<a class="checked" data-id="false" name="xc" href="#">香菜</a> | <a class="checked" data-id="false" name="sc" href="#">生菜</a> |
+									<a class="checked" data-id="false" name="jiuc" href="#">韭菜</a> | <a class="checked" data-id="false" name="hc" href="#">花菜</a> |
+									<a class="checked" data-id="false" name="jxc" href="#">卷心菜</a> | <a class="checked" data-id="false" name="xhl" href="#">西葫芦</a> |
+									<a class="checked" data-id="false" name="jb" href="#">茭白</a> | <a class="checked" data-id="false" name="dy" href="#">豆芽</a>
+								</div>
+							</div>
+							<div style="border-bottom: solid thin #e6edf9;padding:10px 10px;">
+								<p style="color: #4b5798;font-size: 18px;font-weight: bolder;">购买鲜菜</p>
+								<div style="color: #687ad6;font-size: 14px;font-weight: bold;">
+									<a class="checked" data-id="false" name="jc" href="#">净菜</a> | <a class="checked" data-id="false" name="ylc" href="#">叶类菜</a> |
+									<a class="checked" data-id="false" name="glc" href="#">瓜类菜</a> | <a class="checked" data-id="false" name="gjl" href="#">块根块茎类</a> |
+									<a class="checked" data-id="false" name="qgl" href="#">茄果类</a> | <a class="checked" data-id="false" name="cl" href="#">葱</a> |
+									<a class="checked" data-id="false" name="sl" href="#">蒜类</a> | <a class="checked" data-id="false" name="cydl" href="#">菜用豆类</a> |
+									<a class="checked" data-id="false" name="ssc" href="#">水生菜类</a> |
+									<a class="checked" data-id="false" name="bc" href="#">白菜</a> | <a class="checked" data-id="false" name="bc" href="#">菠菜</a> |
+									<a class="checked" data-id="false" name="lb" href="#">萝卜</a> | <a class="checked" data-id="false" name="xhs" href="#">西红柿</a> |
+									<a class="checked" data-id="false" name="hg" href="#">黄瓜</a> | <a class="checked" data-id="false" name="bd" href="#">扁豆</a> |
+									<a class="checked" data-id="false" name="qz" href="#">茄子</a> | <a class="checked" data-id="false" name="ws" href="#">莴笋</a> |
+									<a class="checked" data-id="false" name="qc" href="#">青菜</a> | <a class="checked" data-id="false" name="qc" href="#">芹菜</a> |
+									<a class="checked" data-id="false" name="xc" href="#">香菜</a> | <a class="checked" data-id="false" name="sc" href="#">生菜</a> |
+									<a class="checked" data-id="false" name="jiuc" href="#">韭菜</a> | <a class="checked" data-id="false" name="hc" href="#">花菜</a> |
+									<a class="checked" data-id="false" name="jxc" href="#">卷心菜</a> | <a class="checked" data-id="false" name="xhl" href="#">西葫芦</a> |
+									<a class="checked" data-id="false" name="jb" href="#">茭白</a> | <a class="checked" data-id="false" name="dy" href="#">豆芽</a>
+								</div>
+							</div>
+							<div style="border-bottom: solid thin #e6edf9;padding:10px 10px;">
+								<p style="color: #4b5798;font-size: 18px;font-weight: bolder;">购买鲜菜</p>
+								<div style="color: #687ad6;font-size: 14px;font-weight: bold;">
+									<a class="checked" data-id="false" name="jc" href="#">净菜</a> | <a class="checked" data-id="false" name="ylc" href="#">叶类菜</a> |
+									<a class="checked" data-id="false" name="glc" href="#">瓜类菜</a> | <a class="checked" data-id="false" name="gjl" href="#">块根块茎类</a> |
+									<a class="checked" data-id="false" name="qgl" href="#">茄果类</a> | <a class="checked" data-id="false" name="cl" href="#">葱</a> |
+									<a class="checked" data-id="false" name="sl" href="#">蒜类</a> | <a class="checked" data-id="false" name="cydl" href="#">菜用豆类</a> |
+									<a class="checked" data-id="false" name="ssc" href="#">水生菜类</a> |
+									<a class="checked" data-id="false" name="bc" href="#">白菜</a> | <a class="checked" data-id="false" name="bc" href="#">菠菜</a> |
+									<a class="checked" data-id="false" name="lb" href="#">萝卜</a> | <a class="checked" data-id="false" name="xhs" href="#">西红柿</a> |
+									<a class="checked" data-id="false" name="hg" href="#">黄瓜</a> | <a class="checked" data-id="false" name="bd" href="#">扁豆</a> |
+									<a class="checked" data-id="false" name="qz" href="#">茄子</a> | <a class="checked" data-id="false" name="ws" href="#">莴笋</a> |
+									<a class="checked" data-id="false" name="qc" href="#">青菜</a> | <a class="checked" data-id="false" name="qc" href="#">芹菜</a> |
+									<a class="checked" data-id="false" name="xc" href="#">香菜</a> | <a class="checked" data-id="false" name="sc" href="#">生菜</a> |
+									<a class="checked" data-id="false" name="jiuc" href="#">韭菜</a> | <a class="checked" data-id="false" name="hc" href="#">花菜</a> |
+									<a class="checked" data-id="false" name="jxc" href="#">卷心菜</a> | <a class="checked" data-id="false" name="xhl" href="#">西葫芦</a> |
+									<a class="checked" data-id="false" name="jb" href="#">茭白</a> | <a class="checked" data-id="false" name="dy" href="#">豆芽</a>
+								</div>
+							</div>
+							<div style="border-bottom: solid thin #e6edf9;padding:10px 10px;">
+								<p style="color: #4b5798;font-size: 18px;font-weight: bolder;">购买鲜菜</p>
+								<div style="color: #687ad6;font-size: 14px;font-weight: bold;">
+									<a class="checked" data-id="false" name="jc" href="#">净菜</a> | <a class="checked" data-id="false" name="ylc" href="#">叶类菜</a> |
+									<a class="checked" data-id="false" name="glc" href="#">瓜类菜</a> | <a class="checked" data-id="false" name="gjl" href="#">块根块茎类</a> |
+									<a class="checked" data-id="false" name="qgl" href="#">茄果类</a> | <a class="checked" data-id="false" name="cl" href="#">葱</a> |
+									<a class="checked" data-id="false" name="sl" href="#">蒜类</a> | <a class="checked" data-id="false" name="cydl" href="#">菜用豆类</a> |
+									<a class="checked" data-id="false" name="ssc" href="#">水生菜类</a> |
+									<a class="checked" data-id="false" name="bc" href="#">白菜</a> | <a class="checked" data-id="false" name="bc" href="#">菠菜</a> |
+									<a class="checked" data-id="false" name="lb" href="#">萝卜</a> | <a class="checked" data-id="false" name="xhs" href="#">西红柿</a> |
+									<a class="checked" data-id="false" name="hg" href="#">黄瓜</a> | <a class="checked" data-id="false" name="bd" href="#">扁豆</a> |
+									<a class="checked" data-id="false" name="qz" href="#">茄子</a> | <a class="checked" data-id="false" name="ws" href="#">莴笋</a> |
+									<a class="checked" data-id="false" name="qc" href="#">青菜</a> | <a class="checked" data-id="false" name="qc" href="#">芹菜</a> |
+									<a class="checked" data-id="false" name="xc" href="#">香菜</a> | <a class="checked" data-id="false" name="sc" href="#">生菜</a> |
+									<a class="checked" data-id="false" name="jiuc" href="#">韭菜</a> | <a class="checked" data-id="false" name="hc" href="#">花菜</a> |
+									<a class="checked" data-id="false" name="jxc" href="#">卷心菜</a> | <a class="checked" data-id="false" name="xhl" href="#">西葫芦</a> |
+									<a class="checked" data-id="false" name="jb" href="#">茭白</a> | <a class="checked" data-id="false" name="dy" href="#">豆芽</a>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane" id="tab2">
+						</div>
+						<div class="tab-pane" id="tab3">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="foot" align="center" style="width: 100%;height: 90px;position: absolute;bottom: 0;background-color: #fff;">
+				<a href="newTemp_begin.jsp" type="submit" class="btn btn-success" style="width: 80%;height: 60%;margin-top: 20px; font-size: 20px;color: #FFFFFF;">确定选择</a>
+			</div>
+		</div>
+
+		<script src="../lib/jquery/dist/jquery.min.js"></script>
+		<script src="../lib/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../script/controller/jquery-confirm.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+					var colorList = ['#38b495','#D9534f','#d58512','#0088cc'];
+					var tagList = $('.tag');
+					for(var n = 0;n<tagList.length;n++){
+						 $(tagList[n]).css('color',colorList[n % 4]);
+					}
+					//删除
+					$('.deletetag').on('click',function(){
+						var name= $(this).attr('name');
+						$('a[data-id="'+name+'"]').remove();
+					});
+					
+					var height1 = $(window).height() - $('.head').height() - $('.foot').height();
+					$('.contents').css('height',height1);
+					var height2 = height1 - $('.contenthead').height()-90;
+					$('.content').css('height',height2);
+				});
+				$(function(){
+					$('a[class="checked"]').on('click',function(){
+						var flag = $(this).attr("data-id");
+						if(flag == "false"){
+							$(this).attr("data-id","true");
+							$(this).css("color","#05C3EC");
+						}else if(flag =="true"){
+							$(this).attr("data-id","false");
+							$(this).css("color","#687ad6");
+						}
+						
+					});
+				});
+		</script>
+	</body>
+
+</html>

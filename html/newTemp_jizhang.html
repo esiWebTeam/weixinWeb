@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="../lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="../lib/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+		<link href="../css/base.css" rel="stylesheet" />
+		<link href="../css/esi-weixin.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/jquery-confirm.min.css" />
+		<link rel="stylesheet" href="../css/newTemp_jizhang.css" />
+	</head>
+
+	<body>
+		<div class="esi-weixin-page">
+			<div class="header">
+				<div class="left-menu">
+					< 新建模板</div>
+						<div class="right-menu"><img src="../image/icon_more@1.5x.png" /></div>
+				</div>
+				<div class="content">
+					<div class="part" style="margin-top: 10px;overflow: scroll;">
+						<div class="center-block datetime">
+							<table>
+								<tr style="width: 100%;">
+									<td><div class="date1"><span style="color: #B3B3C2;font-size: 25px;font-weight: bold;">日期</span></div></td>
+									<td><div id="time-sub"><span class="glyphicon glyphicon-menu-left time-sub"></span></div></td>
+									<td>
+										<div align="center">
+											<input type="text" id="time" class="form-control" style=" border: none;background-color: #FFFFFF;text-align: center;font-size: 20px;" readonly="readonly" />
+											<span style="color: #B3B3C2;font-size: 16px;">不重复</span>
+										</div>
+									</td>
+									<td><div id="time-add"><span class="glyphicon glyphicon-menu-right time-add"></span></div></td>
+									<td><div class="calendar"></div></td>
+								</tr>
+							</table>
+						</div>
+						
+						<div class="row module center-block">
+							<div class="col-sm-9">
+								<span class="title">买白菜</span>
+								<br/>
+								<span class="code">编码  226661</span>
+								<div class="row">
+									<div class="col-xs-8 col-sm-6 col-1" style="width: 60%;">
+										<span class="code">数量</span>
+										<input type="text" class="cont" /><span class="code">斤</span>
+									</div>
+									<div class="col-xs-4 col-sm-6 col-2">
+										<span class="code">金额</span><span class="money"> 0.00</span>
+									</div>
+								</div>
+								<span class="onlineshop" data-name="unchecked">网络购物</span>
+							</div>
+						</div>
+						<div class="row module center-block">
+							<div class="col-sm-9">
+								<span class="title">工资收入</span>
+								<br />
+								<span class="code">编码  226661</span>
+								<div class="row">
+									<div class="col-xs-8 col-sm-6 col-1" style="width: 60%;">
+										<span class="code">家庭成员</span>
+										<input type="text" class="cont" />
+									</div>
+									<div class="col-xs-4 col-sm-6 col-2">
+										<span class="code">成员代码</span><span class="money"> 01</span>
+									</div>
+								</div>
+								<span class="code">工资金额</span><span class="money"> 2000.00</span>
+							</div>
+						</div>
+						<div class="row module center-block">
+							<div class="col-sm-9">
+								<span class="title">买白菜</span>
+								<br />
+								<span class="code">编码  226661</span>
+								<div class="row">
+									<div class="col-xs-8 col-sm-6 col-1" style="width: 60%;">
+										<span class="code">数量</span>
+										<input type="text" class="cont" /><span class="code">斤</span>
+									</div>
+									<div class="col-xs-4 col-sm-6 col-2">
+										<span class="code">金额</span><span class="money"> 0.00</span>
+									</div>
+								</div>
+								<span class="onlineshop" data-name="unchecked">网络购物</span>
+							</div>
+						</div>
+						<div class="row module center-block">
+							<div class="col-sm-9">
+								<span class="title">工资收入</span>
+								<br />
+								<span class="code">编码  226661</span>
+								<div class="row">
+									<div class="col-xs-8 col-sm-6 col-1" style="width: 60%;">
+										<span class="code">家庭成员</span>
+										<input type="text" class="cont" />
+									</div>
+									<div class="col-xs-4 col-sm-6 col-2">
+										<span class="code">成员代码</span><span class="money"> 01</span>
+									</div>
+								</div>
+								<span class="code">工资金额</span><span class="money"> 2000.00</span>
+							</div>
+						</div>
+						<div class="row module center-block">
+							<div class="col-sm-9">
+								<span class="title">买白菜</span>
+								<br />
+								<span class="code">编码  226661</span>
+								<div class="row">
+									<div class="col-xs-8 col-sm-6 col-1" style="width: 60%;">
+										<span class="code">数量</span>
+										<input type="text" class="cont" /><span class="code">斤</span>
+									</div>
+									<div class="col-xs-4 col-sm-6 col-2">
+										<span class="code">金额</span><span class="money"> 0.00</span>
+									</div>
+								</div>
+								<span class="onlineshop" data-name="unchecked">网络购物</span>
+							</div>
+						</div>
+						<div class="row module center-block">
+							<div class="col-sm-9">
+								<span class="title">工资收入</span>
+								<br />
+								<span class="code">编码  226661</span>
+								<div class="row">
+									<div class="col-xs-8 col-sm-6 col-1" style="width: 60%;">
+										<span class="code">家庭成员</span>
+										<input type="text" class="cont" />
+									</div>
+									<div class="col-xs-4 col-sm-6 col-2">
+										<span class="code">成员代码</span><span class="money"> 01</span>
+									</div>
+								</div>
+								<span class="code">工资金额</span><span class="money"> 2000.00</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="foot" align="center" style="width: 100%;height: 90px;position: absolute;bottom: 0;background-color: #fff;">
+					<button type="submit" class="btn btn-success" style="width: 80%;height: 60%;margin-top: 20px; font-size: 20px;color: #FFFFFF;">保存</button>
+				</div>
+			</div>
+
+			<script src="../lib/jquery/dist/jquery.min.js"></script>
+			<script src="../lib/bootstrap/dist/js/bootstrap.min.js"></script>
+			<script type="text/javascript" src="../script/controller/jquery-confirm.min.js"></script>
+			<script type="text/javascript">
+				$(function() {
+					var date = new Date();
+					var month = date.getMonth() + 1;
+					var year = date.getFullYear();
+					$('#time').val(year + "-" + month);
+					$('#time-add').on('click', function() {
+						if (month == 12) {
+							month = 1;
+							year++;
+							$('#time').val(year + "-" + month);
+						} else {
+							month++;
+							$('#time').val(year + "-" + month);
+						}
+					});
+					$('#time-sub').on('click', function() {
+						if (month == 1) {
+							month = 12;
+							year--;
+							$('#time').val(year + "-" + month);
+						} else {
+							month--;
+							$('#time').val(year + "-" + month);
+						}
+					});
+				});
+			
+				$(function(){
+					$('.onlineshop').on('click',function(){
+						var name = $('.onlineshop').attr("data-name");
+						if(name == "unchecked"){
+							$('.onlineshop').css('background-image','url(../image/icon_radio_yes.png)');
+							$('.onlineshop').css('background-repeat','no-repeat');
+							$('.onlineshop').css('background-position-y','5px');
+							var name = $('.onlineshop').attr("data-name","checked");
+						}else{
+							$('.onlineshop').css('background','none');
+							var name = $('.onlineshop').attr("data-name","unchecked");
+						}
+					});
+					//主体高度
+					var height = $(window).height() - 130;
+					$('.part').css('height',height);
+				});
+			</script>
+	</body>
+
+</html>

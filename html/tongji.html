@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="../lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="../lib/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+		<link href="../css/base.css" rel="stylesheet" />
+		<link href="../css/esi-weixin.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="esi-weixin-page">
+			<div class="header">
+            	<div class="left-menu"> < 返回</div>
+            	<div class="title">首页</div>
+            	<div class="right-menu">保存</div>
+        	</div>
+			<div class="header">
+				<div align="center">
+					 <div class="title">
+						<select style="height: 30px;background-color: #4b5798;color: #FFFFFF;font-size: 20px;border: none;">
+							<option>支出统计</option>
+							<option>收入统计</option>
+							<option>网购统计</option>
+						</select>
+					 </div>
+            		 <div class="right-menu">
+            		 	<div style="position: absolute;right: 10px;">
+							<a href="/weixinWeb/html/shaixuan.html"><img src="../image/icon_screening@1.5x.png" /></a>
+						</div>
+            		 </div>
+				</div>
+			</div>
+			<div class="content">
+				<div style="margin-top: 20px;">
+					<div align="center" style="display: inline-block;width: 60%;height: 50px;margin-left:10px;padding-top: 10px;background-color: #FFFFFF;border-radius: 4px;">
+						<div id="time-sub" style="display: inline-block;"><span class="glyphicon glyphicon-menu-left time-sub"></span></div>
+						<div style="display: inline-block;width: 80%;">
+							<input type="text" id="time" class="form-control" style=" border: none;background-color: #FFFFFF;text-align: center;font-size: 20px;" readonly="readonly" />
+						</div>
+						<div id="time-add" style="display: inline-block;"><span class="glyphicon glyphicon-menu-right time-add"></span></div>
+					</div>
+					<a align="center" id="selectEchart" style="display: inline-block;width: 30%;height: 50px;padding-top: 10px;margin-left: 10px; background-color: #fff;border:solid 2px;border-color:#4b5798;border-radius: 4px;">
+						<div style="display: inline-block;"><span id="icon-echart"><img src="../image/icon_form@1.5x.png"/></span></div>
+						<div style="display: inline-block;"><span id="echart" name="Bar" style="font-size: 16px; color: #4b5798;">饼图</span></div>
+					</a>
+				</div>
+				<div align="center" id="echartsOutter">
+					<div align="center" id="echartBar"></div>
+					<div align="center" id="echartPie"></div>
+				</div>
+			</div>
+		</div>
+
+		<script src="../lib/jquery/dist/jquery.min.js"></script>
+		<script src="../lib/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../script/controller/echarts-all.js"></script>
+		<script src="../script/controller/tongji.js"></script>
+	</body>
+
+</html>

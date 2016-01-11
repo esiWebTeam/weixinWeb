@@ -1,0 +1,48 @@
+﻿/*header相关设置*/
+.esi-weixin-page .header {
+    background-color:#3a447b;
+    height:50px;
+    position:fixed;
+    width:100%;
+    color:#fff;
+    font-size:18px;
+    opacity:1.0;
+    z-index:999999;
+}
+
+.header .left-menu {
+    position:absolute;
+    height:40px;
+    line-height:40px;
+    top:50%;
+    margin-top:-20px;
+    left:5px;
+}
+
+.header .title {
+    min-width:80px;
+    max-width:50%;
+    height:40px;
+    line-height:40px;
+    margin-top:5px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+
+.header .right-menu {
+    position:absolute;
+    height:40px;
+    line-height:40px;
+    top:50%;
+    margin-top:-20px;
+    right:5px;
+}
+
+
+/*conent相关设置*/
+.esi-weixin-page .content {
+    position:relative;
+    top:50px;
+    height:auto;
+}

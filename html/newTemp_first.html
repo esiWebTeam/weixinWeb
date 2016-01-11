@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link href="../lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../lib/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="../css/base.css" rel="stylesheet" />
+    <link href="../css/esi-weixin.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/jquery-confirm.min.css" />
+    <link rel="stylesheet" href="../css/newTemp_first.css" />
+</head>
+<body>
+    <div class="esi-weixin-page">
+        <div class="header">
+            <div class="left-menu"> < 新建模板</div>
+            <div class="right-menu"><img src="../image/trash@1.5x.png" /></div>
+        </div>
+        <div class="content">
+            <div style="margin: 5% 5%;">
+			<a href="newTemp_begin.jsp" align="center" style="display: block; padding-top: 15px; width: 100%;height: 60px;background-color: #fff;">
+				<span style="display: inline-block;width: 33px;height: 33px;background-image: url(../image/icon_more.png);vertical-align: middle;"></span>
+				<span style="color: #2bdba0;font-size: 20px;font-weight: bold; display: inline-block;vertical-align: middle;">新建模板</span>
+			</a>
+		</div>
+		<div style="margin: 5% 5%;height: 70%;">
+			<a href="#" class="module">
+				<span data-id="mc" class="delete"></span>
+				<div style="display: inline-block;vertical-align: middle;">
+					<span style="font-size: 24px;font-weight: bold;">买菜</span><br />
+					<span style="color:#B3B3C2;font-weight: bold;font-size: 18px;">记账项目<span style="color: #687ad6;font-size: 20px;">12</span>项</span>
+				</div>
+				<span style="display: inline-block;width: 15px;height: 27px;background-image: url(../image/icon_arrow_next@1.5x.png);vertical-align: middle;float: right;margin-top: 20px;"></span>
+			</a>
+			<a href="#" class="module">
+				<span data-id="bb" class="delete"></span>
+				<div style="display: inline-block;vertical-align: middle;">
+					<span style="font-size: 24px;font-weight: bold;">宝宝用的</span><br />
+					<span style="color:#B3B3C2;font-weight: bold;font-size: 18px;">记账项目<span style="color: #687ad6;font-size: 20px;">12</span>项</span>
+				</div>
+				<span style="display: inline-block;width: 15px;height: 27px;background-image: url(../image/icon_arrow_next@1.5x.png);vertical-align: middle;float: right;margin-top: 20px;"></span>
+			</a>
+			<a href="#" class="module">
+				<span data-id="gs" class="delete"></span>
+				<div style="display: inline-block;vertical-align: middle;">
+					<span style="font-size: 24px;font-weight: bold;">公司相关项目记账</span><br />
+					<span style="color:#B3B3C2;font-weight: bold;font-size: 18px;">记账项目<span style="color: #687ad6;font-size: 20px;">12</span>项</span>
+				</div>
+				<span style="display: inline-block;width: 15px;height: 27px;background-image: url(../image/icon_arrow_next@1.5x.png);vertical-align: middle;float: right;margin-top: 20px;"></span>
+			</a>
+		</div>
+        </div>
+    </div>
+
+    <script src="../lib/jquery/dist/jquery.min.js"></script>
+    <script src="../lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../script/controller/jquery-confirm.min.js"></script>
+    <script type="text/javascript">
+			$(function(){
+				$('.deleteModule').on('click',function(){
+					var deleteState = $('.delete').css('display');
+					if(deleteState == "none"){
+						$('.delete').css('display','inline-block');
+					}else{
+						$('.delete').css('display','none');
+					}
+				});
+				$('.delete').on('click',function(){
+					$.confirm({
+						title: '提示!',
+       					content: '确定删除该模板？',
+       					confirm:function(){
+       						
+       					},
+       					cancel:function(){
+       						
+       					}
+					});
+				});
+			});
+		</script>
+</body>
+</html>
